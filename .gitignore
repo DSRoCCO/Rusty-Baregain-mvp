@@ -1,0 +1,51 @@
+# Entorno y configuración local de Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter e IPython locales
+.ipynb_checkpoints/
+.jupyter/
+.ipython/
+
+# Skills internas de trabajo: no forman parte del producto ni de la entrega
+skills/
+
+# Secretos y configuración específica de cada máquina
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.json
+service-account*.json
+
+# Empaquetado, distribución y herramientas locales
+build/
+dist/
+*.egg-info/
+.eggs/
+.streamlit/secrets.toml
+.vscode/
+.idea/
+
+# Archivos temporales y del sistema operativo
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
