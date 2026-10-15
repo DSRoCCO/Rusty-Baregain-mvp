@@ -1,0 +1,17 @@
+campo,definición,unidad/tipo,uso en este análisis
+DateCrawled,fecha y hora de captura,fecha/hora,lineage y partición temporal; no predictor
+Price,precio registrado,EUR,target; sólo valores > 0 para modelado
+VehicleType,tipo de vehículo,categoría,predictor categórico
+RegistrationYear,año de matriculación declarado,año,base para antigüedad
+Gearbox,tipo de transmisión,categoría,predictor categórico
+Power,potencia declarada,CV,predictor numérico discreto
+Model,modelo declarado,categoría,predictor y grupo comparable
+Mileage,kilometraje declarado,km,predictor numérico discreto en la fuente
+RegistrationMonth,mes de matriculación declarado,mes,excluido: no aporta a la decisión definida
+FuelType,combustible,categoría,predictor categórico
+Brand,marca,categoría,predictor y grupo comparable
+NotRepaired,declaración de reparación pendiente,categoría,predictor categórico
+DateCreated,fecha de creación,fecha,lineage; excluido del modelo
+NumberOfPictures,número de imágenes,conteo,excluido del modelo
+PostalCode,código postal,código,excluido: geografía no disponible para el MVP
+LastSeen,última observación,fecha/hora,lineage; excluido por potencial fuga

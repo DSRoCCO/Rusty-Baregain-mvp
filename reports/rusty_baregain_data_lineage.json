@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-10-15T17:06:18.232755+00:00",
+  "raw_path": "data/raw/car_data.csv",
+  "raw_sha256": "fbe6fc8bf597d30c26f810e4768244776b65248b9617069e803b42e9515e10b0",
+  "raw_rows": 354369,
+  "descriptive_rows": 354107,
+  "modeling_base_rows": 343337,
+  "target": "Price",
+  "target_eligibility": "Price > 0; Price no se imputa",
+  "deterministic_rules": [
+    "deduplicación exacta",
+    "PriceObserved = Price > 0",
+    "AgeAtCrawl a partir de RegistrationYear y DateCrawled; años inválidos quedan nulos",
+    "PowerForModel conserva Power en [1, 1000]; inválidos quedan nulos"
+  ],
+  "deferred_to_modeling": [
+    "imputación aprendida",
+    "codificación",
+    "escalado",
+    "selección de modelo",
+    "evaluación temporal"
+  ]
+}

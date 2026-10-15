@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "source_rows": 318183,
+  "features": [
+    "AgeAtCrawl",
+    "PowerForModel",
+    "Mileage",
+    "VehicleType",
+    "Gearbox",
+    "Model",
+    "FuelType",
+    "Brand",
+    "NotRepaired"
+  ],
+  "metrics": {
+    "mae_eur": 1003.8921588320121,
+    "rmse_eur": 1598.7849540245359,
+    "interval_half_width_eur": 2277.25392234241,
+    "interval_coverage": 0.8940741886821646,
+    "test_rows": 51706,
+    "calibration_rows": 31662,
+    "error_by_price": [
+      {
+        "rango": "(-0.001, 1000.0]",
+        "n": 10795,
+        "mae_eur": 569.2620230812286
+      },
+      {
+        "rango": "(1000.0, 5000.0]",
+        "n": 23190,
+        "mae_eur": 728.5267232124028
+      },
+      {
+        "rango": "(5000.0, 10000.0]",
+        "n": 10645,
+        "mae_eur": 1332.0387907505542
+      },
+      {
+        "rango": "(10000.0, inf]",
+        "n": 7076,
+        "mae_eur": 2075.7457301541667
+      }
+    ]
+  },
+  "model_note": "HGB; la UI exige entradas completas."
+}

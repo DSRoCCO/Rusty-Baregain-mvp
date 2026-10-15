@@ -24,6 +24,14 @@ htmlcov/
 # Skills internas de trabajo: no forman parte del producto ni de la entrega
 skills/
 
+# Especificación de trabajo local; no forma parte de la publicación
+docs/project_spec.md
+
+# Metadatos locales de agentes y credenciales de nube
+.agents/
+.codex/
+.aws/
+
 # Secretos y configuración específica de cada máquina
 .env
 .env.*

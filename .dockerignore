@@ -1,0 +1,44 @@
+# Contexto de ejecución: la futura imagen sólo necesitará la aplicación,
+# el paquete fuente, la base de modelado y el modelo versionados.
+.git/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.jupyter/
+.ipython/
+
+# Sesiones locales, secretos y credenciales
+.agents/
+.codex/
+.aws/
+skills/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.json
+service-account*.json
+.streamlit/secrets.toml
+
+# Material útil en el repositorio, pero innecesario para el runtime del MVP
+notebooks/
+reports/
+tests/
+docs/
+data/raw/
+
+# Se conservan explícitamente para el runtime futuro:
+# data/processed/rusty_baregain_modeling_base.csv
+# data/processed/rusty_baregain_descriptive.csv
+# models/price_estimator.joblib
+# models/price_estimator_metadata.json

@@ -1,16 +1,23 @@
 [project]
-name = "rusty-bargain-eda"
+name = "rusty-baregain-mvp"
 version = "0.1.0"
-description = "Análisis integral reproducible del conjunto Rusty Bargain"
+description = "Demo analítica reproducible de referencia histórica de precios de vehículos usados"
 requires-python = ">=3.12"
 dependencies = [
+    "altair>=5.0",
+    "joblib>=1.4",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "streamlit>=1.40",
+]
+
+[dependency-groups]
+analysis = [
     "ipykernel>=6.29",
     "jupyterlab>=4.2",
     "matplotlib>=3.9",
-    "numpy>=1.26",
-    "pandas>=2.2",
     "scipy>=1.13",
-    "scikit-learn>=1.5",
     "seaborn>=0.13",
 ]
 
